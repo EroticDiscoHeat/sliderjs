@@ -1,0 +1,31 @@
+.wrapper{
+    overflow: hidden;
+    width: 500px;
+    margin: 0 auto;
+}
+.slider-track{
+    display: flex;
+    transition: .2s;
+}
+.slider-buttons{
+    text-align: center;
+    background-color: white;
+}
+.slider-item{
+    vertical-align: middle;
+    height: 100%;
+    min-width: 100%;
+}
+.slider-item:nth-child(5n+1) {background-color: red}
+.slider-item:nth-child(5n+2) {background-color: green}
+.slider-item:nth-child(5n+3) {background-color: blue}
+.slider-item:nth-child(5n+4) {
+    background-color: black;
+    height: 300px;
+    width: 500px;
+}
+.slider-item:nth-child(5n+5) {
+    background-color: yellow;
+    height: 400px;
+    width: 500px;
+}
