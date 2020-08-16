@@ -2,32 +2,27 @@
  <html lang="ru">
      <head>
          <meta charset="UTF-8">
-         <link rel="stylesheet" href="../src/styles.css">
+         <link rel="stylesheet" href="./styles.css">
      </head>
      <body>
-        <div class="wrapper">
-            <div class="slider-track">
+            <div id="track" onmousedown="return false" onselectstart="return false">
                 <img class="slider-item" src='./1.jpg'></img>
                 <img class="slider-item" src='./2.jpg'></img>
                 <img class="slider-item" src='./3.jpg'></img>
                 <div class="slider-item"></div>
                 <div class="slider-item"></div>
             </div>
-            <div class="slider-buttons">
-                <button class="btn-prev">
-                    <img src='../src/svg/left-arrow.svg' width='50px'></svg>
-                </button>
-                <button class="btn-next">
-                    <img src='../src/svg/right-arrow.svg' width='50px'></svg>
-                </button>
-                <button class="btn-play">
-                    <img src='../src/svg/play-button.svg' width='50px'></svg>
-                </button>
-                <button class="btn-pause">
-                    <img src='../src/svg/pause-button.svg' width='50px'></svg>
-                </button>
+            <div id="tar" onmousedown="return false" onselectstart="return false">
+                <img class="slider-item" src='./1.jpg'></img>
+                <img class="slider-item" src='./2.jpg'></img>
+                <img class="slider-item" src='./3.jpg'></img>
+                <div></div>
+                <div class="slider-item"></div>
             </div>
-        </div>
-        <script src="../example/dist/main.js"></script>
+        <script src="../dist/main.js"></script>
+        <script>
+            SliderJs("track", 2000, false, true)
+            SliderJs("tar", 2000, false, true)
+        </script>
      </body>
  </html>
